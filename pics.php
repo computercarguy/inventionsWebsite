@@ -1,5 +1,40 @@
 <?php
+if (isset($_REQUEST["picStart"]))
+{
+	$picStart = $_REQUEST["picStart"];
+}
 
+if (isset($_REQUEST["picEnd"]))
+{
+	$picEnd = $_REQUEST["picEnd"];
+}
+
+$TheInfo = array();
+$htmlCode = "<html>";
+$htmlCode .= "<body>";
+$htmlCode .= "<table>";
+$htmlCode .= "<tr>";
+$htmlCode .= "<td class=\"aligncenter\" colspan=\"3\">Click on the pictures below to see a larger version.</td>".Chr(13);
+for ($i=$picStart;$i<$picEnd;$i++){
+	$TheInfo = PicInfo($i);
+	$htmlCode .= "</tr><tr>".Chr(13);
+	$htmlCode .= "<td class=\"centervertical\"><input type=\"image\" src=\"/inventions/images/".$TheInfo[0]."\" alt=\"".$TheInfo[1]."\" ";
+	$htmlCode .= "class=\"productImages\" onclick=\"updateImageDisplay('/inventions/images/".$TheInfo[0]."')\"/></td>".Chr(13);
+		$htmlCode .= "<td class=\"alignleft\">".$TheInfo[2]."</td>".Chr(13);
+	if ((count($TheInfo) > 3) && ($TheInfo[3] != ""))
+	{
+		$htmlCode .= "<td class=\"topcenter\"><input type=\"image\" src=\"/inventions/images/".$TheInfo[3]."\" ";
+		$htmlCode .= "\" class=\"productImages\" alt=\"".$TheInfo[4]."\"";
+		$htmlCode .= "onclick=\"updateImageDisplay('/inventions/images/".$TheInfo[3]."')\"/></td>".Chr(13);
+	}
+}
+$htmlCode .= "</tr>";
+$htmlCode .= "</table";
+$htmlCode .= "</body>";
+$htmlCode .= "</html>";
+
+echo $htmlCode;
+		
 function PicInfo($Pic){
   $TheInfo = array();
   if ($Pic == 1){

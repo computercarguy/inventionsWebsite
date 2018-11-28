@@ -1,0 +1,104 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<script type="text/javascript">
+function loadBikeDesk()
+{
+	var pictures = [38, 47];
+			
+		var returnMethod = function(xhr){
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+				  bikeDeskPictures.innerHTML = xhr.responseText;
+				}
+			}
+		};
+		
+		var url = "../pics.php?picStart=" + pictures[0] + "&picEnd=" + pictures[1];
+		
+		asyncAjax(url, returnMethod);
+}
+
+function asyncAjax(url, returnMethod)
+{
+	var xhr = new XMLHttpRequest();
+	
+	xhr.open("GET", url, true);
+
+	xhr.onload = function (e) {
+	  returnMethod(xhr);
+	};
+
+	xhr.onerror = function (e) {
+		console.error(xhr.statusText);
+	};
+	
+	xhr.send(null);
+}
+
+
+function updateImageDisplay(imagePath)
+{
+	window.parent.imageDisplay.innerHTML = "Click to close.<br /><image src=\"" + imagePath +
+		"\" onclick=\"hideImageDisplay()\" class=\"imageForDisplay\">";
+	window.parent.imageDisplay.style.display = "block";
+}
+
+function hideImageDisplay()
+{
+	window.parent.imageDisplay.style.display = "none";
+}
+
+</script>
+</head>
+<body onload="loadBikeDesk()">
+<table>
+	<tr>
+		<td class="alignleft" colspan="2">To make it perectly clear why I 
+			built this, I'm going to let you know that I'm fat, out of shape, and frugal.	That said, 
+			I wanted to lose weight, get into better condition, not spend much money, and do it while 
+			still getting work done.	I've gone on bike trails, and they are boring.	Also, I have 
+			lots of muscle and need to tone it down instead of make more muscle.	Going up hills, 
+			accelerating, and going fast all make muscle, and I want to get lean(er) muscles so that 
+			clothes fit right.	Even when I was 155 lbs, straight out of 5 months of Army Basic and 
+			AIT training, I had to wear large clothes.	I had a 40" chest, 16.5" neck, and massive 
+			legs.	I now weigh... let's just call it "a lot more" and I have much larger dimensions 
+			because of it, of course.
+		</td>
+	</tr>
+	<tr>
+		<td class="alignleft">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="alignleft" colspan="2">So, what I wanted was a way to 
+			lean up my muscles, burn calories, keep from being bored, distract myself from the 
+			discomfort and sometimes pain of exercising, and still get work done.	I decided a 
+			stationary bike that had a desk instead of handles would work perfect.	Now all I had 
+			to do was build it.
+		</td>
+	</tr>
+	<tr>
+		<td class="alignleft">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="bikeDeskPictures"></td>
+	</tr><tr>
+		<td class="alignleft">&nbsp;</td>
+	</tr><tr>
+		<td class="alignleft" colspan="2">You would think that after all that work, 
+			I would be using it right now as I write this.	Unfortunately, no I'm not.	I had an 
+			exhausting week at work, and another one is probably coming up, so I'm not bothering.	
+			I honestly don't know when I'm going to be using it next, but it'll be there when I have 
+			the opportunity.	The day after I finished this project, I did use it, so it's not a 
+			total waste.	Also, I burned a lot of calories while I was making it.
+		</td>
+	</tr>
+	<tr>
+		<td class="alignleft">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="aligncenter" colspan="2">Click on the pictures above to see a larger version.</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,7 +1,8 @@
-body{
+.body{
   background-image: url("images/bkgrnd2.jpg");
   background-repeat:no-repeat;
   background-attachment: fixed;
+  background-color:#ffffff;
 }
 
 td.menu {
@@ -9,6 +10,7 @@ td.menu {
   text-decoration: underline;
   display: block;
   white-space:nowrap;
+  cursor: pointer;
 }
 
 td.menu2 {
@@ -16,6 +18,7 @@ td.menu2 {
   font-weight:bold;
   text-decoration:none;
   display: block;
+  cursor: pointer;
 }
 
 td.menu3 {
@@ -24,13 +27,14 @@ td.menu3 {
   cursor: pointer;
   display: block;
   white-space:nowrap;
+  cursor: pointer;
 }
 
-td.right{
+td.alignright{
   text-align:right;
 }
 
-td.left{
+td.alignleft{
   text-align:left;
 }
 
@@ -49,20 +53,20 @@ td.lefttop{
   vertical-align:top;
 }
 
-table.cent{
+table.aligncenter{
   margin-left:auto;
   margin-right:auto;
   white-space:nowrap;
 }
 
-td.cent{
+td.aligncenter{
   text-align:center;
   margin-left:auto;
   margin-right:auto;
   white-space:nowrap;
 }
 
-td.centv{
+td.centervertical{
   text-align:center;
   margin-left:auto;
   margin-right:auto;
@@ -75,22 +79,22 @@ td.middleleft{
   text-align:left;
 }
 
-td.topcent{
+td.topcenter{
   vertical-align:top;
   text-align:center;
 }
 
-td.top{
+td.verticaltop{
   vertical-align:top;
 }
 
-td.cent33{
+td.center33{
   text-align:center;
   width:33%;
   white-space:nowrap;
 }
 
-td.cent34{
+td.center34{
   text-align:center;
   width:34%;
   white-space:nowrap;
@@ -103,50 +107,73 @@ label.link {
   display: block;
 }
 
-a.mylink:link{
+a.styledlink:link{
   color: #8cffff;
 }
 
-a.mylink:visited{
+a.styledlink:visited{
   color: #8cffff;
 }
 
-a.mylink:hover{
+a.styledlink:hover{
   color: #8cffff;
 }
 
-a.mylink:active{
+a.styledlink:active{
   color: #8cffff;
 }
 
-a.menu:link{
+.menu4{
   color: #8cffff;
+  cursor: pointer;
 }
 
-a.menu:visited{
-  color: #8cffff;
-}
-
-a.menu:hover{
-  color: #8cffff;
-}
-
-a.menu:active{
-  color: #8cffff;
-}
-
-a.menu2:link{
+.menu5{
   color: #ffffff;
+  cursor: pointer;
 }
 
-a.menu2:visited{
-  color: #ffffff;
+.imageDisplay
+{
+	height:90%;
+	width:90%;
+	display:none;
+	margin: auto;
+	background-color:lightgrey;
+	position: fixed;
+    left: 5%;
+	top: 5%;
+	vertical-align: middle;
+	text-align: center;
 }
 
-a.menu2:hover{
-  color: #ffffff;
+.imageForDisplay {  
+    max-height: 95%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
 }
 
-a.menu2:active{
-  color: #ffffff;
+.productImages{
+	border: 0px;
+	max-width: 250px;
+	max-height: 150px;
+}
+
+.productPage{
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.link {
+  color: #0000ff;
+  text-decoration: underline;
+  cursor: pointer;
 }
