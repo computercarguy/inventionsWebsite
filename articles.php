@@ -1,0 +1,30 @@
+<?php
+
+function Articles($Article){
+  $TheInfo = array();
+  if (($Article <= 0) || ($Article > 1)){
+    $TheInfo[0] = "The articles I'm including in this part of the site are here for various reasons.  Some of them might be my own thoughts about new products, products ideas, design flaws or strengths, or something in general about the way things work or should work.  I might rant, rave, bemoan, or even commend whatever topic happens to be on my mind at that time.";
+    $TheInfo[1] = "What you read here is strictly the wanterings of the mind of Eric Ingamells, and it doesn't matter if you approve or not, it's here for you to read.";
+  } elseif ($Article == 1){
+    $TheInfo[0] = "I find myself disappointed and underwhelmed by this past months \"What's New\" in Popular Science, May 2012 issue.  Over half of the products are obvious \"upgrades\" to current products and the rest affect so few people as to barely be worth mentioning.  To reference the ideas, I will be referring to the shortened device name, and I will not describe the devices since it has already been done for me at the <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets\" rel=\"external\">Popular Science website</a>.";
+    $TheInfo[1] = "The <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets\" rel=\"external\">Twist Webcam</a> should have been the first feature webcam developers added after building the very first prototype in the original webcam.  <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=1\" rel=\"external\">Augmented Reality</a> is a simple trick of taking a still frame from a video and making it into a puzzle, then showing the video when the puzzle is solved.  <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=3\" rel=\"external\">Air DAC Wireless System</a> is a culmination of wireless speakers, an MP3 player, and a stereo receiver that should have been developed shortly after MP3 players.  The <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=4\" rel=\"external\">Press n' Pour Cocktail Shaker</a> is a surprise, since I thought they already did that.  <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=5\" rel=\"external\">D-Handle Garden Spade</a> should have been obvious at least 30-40 years ago.  <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=7\" rel=\"external\">One X</a> should have been a smart phone app on the very first smart phones, really.  <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=10\" rel=\"external\">Bistro Pour Over Coffee Machine</a> is such an easy update on an \"old favorite\" of coffee drinkers that I can only palmface to think it hadn't already been done.  <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=11\" rel=\"external\">DX-ECO Mouse</a> works on an idea from the Batman movie, made in 1989, which was to use a capacitor for a battery.";
+    $TheInfo[2] = "I'm totally unimpressed by this lineup so far.  ";
+    $TheInfo[3] = "As for <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=2\" rel=\"external\">NAO Headlamp</a>, what real, practical purpose does it have?  Are you really going to throw your smartphone at your TV, even if it has an eight inch foam ball of <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=6\" rel=\"external\">TheO</a> around it?  The <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=8\" rel=\"external\">Steady Multi-tool</a> is such a non-product that I doubt too many people will actually use it as a tripod, due to the single angle shots it looks to bring.  As for <a href=\"http://www.popsci.com/gadgets/gallery/2012-04/goods-may-2012s-hottest-gadgets?image=9\" rel=\"external\">Juice 100 BLX</a>, is tennis elbow really that much of a concern for the average person?  And last but not least, <a href=\"http://www.popsci.com/technology/article/2012-04/aerialist\" rel=\"external\">The Fastest, Lightest, Most Maneuverable R/C Jet Plane</a> is a cool plane which begs the questions: Why do you need it; and Why aren't model airplane designers putting the servos inside the planes before now?";
+    $TheInfo[4] = "In the end, I'm not sure if it's a slow period for new products, companies are just putting out so much trash right now, or if all the good ideas have already been taken by someone else.  My suggestion for the American Public is to find something, anything, and find the worst problem with it, then fix it.  It could be a tool you use often, a table, chair, light bulb, or truly anything.  Even if you don't physically fix the problem, at least write up your idea.  Next step is to find out if this solution exists already and if not, find a local inventors club to see how they can help you get this new idea or invention to public use.  That's what I've been doing ever since I can remember.  It's only been in the last 3 years that I've spent some time trying to get my ideas patented, licensed, or produced.  Not all of my ideas are good, but most are better than the list I mentioned above, and the ones I'm actively been working on are a lot better than the previous, pitiful list, which was produced by the usually stellar magazine, Popular Science.";
+  } elseif ($Article == 2){
+    $TheInfo[0] = "";
+    $TheInfo[1] = "";
+  } elseif ($Article == 3){
+    $TheInfo[0] = "";
+    $TheInfo[1] = "";
+  } elseif ($Article == 4){
+    $TheInfo[0] = "";
+    $TheInfo[1] = "";
+  } elseif ($Article == 5){
+    $TheInfo[0] = "";
+    $TheInfo[1] = "";
+  }
+  return $TheInfo;
+}
+
+?>

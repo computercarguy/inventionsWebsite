@@ -1,0 +1,152 @@
+body{
+  background-image: url("images/bkgrnd2.jpg");
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+
+td.menu {
+  color: #8cffff;
+  text-decoration: underline;
+  display: block;
+  white-space:nowrap;
+}
+
+td.menu2 {
+  color: #ffffff;
+  font-weight:bold;
+  text-decoration:none;
+  display: block;
+}
+
+td.menu3 {
+  color: #8cffff;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+  white-space:nowrap;
+}
+
+td.right{
+  text-align:right;
+}
+
+td.left{
+  text-align:left;
+}
+
+td.leftmenu{
+  text-align:left;
+  cursor: pointer;
+}
+
+td.leftmiddle{
+  vertical-align:middle;
+  text-align:left;
+}
+
+td.lefttop{
+  text-align:left;
+  vertical-align:top;
+}
+
+table.cent{
+  margin-left:auto;
+  margin-right:auto;
+  white-space:nowrap;
+}
+
+td.cent{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  white-space:nowrap;
+}
+
+td.centv{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  vertical-align:top;
+  white-space:nowrap;
+}
+
+td.middleleft{
+  vertical-align:middle;
+  text-align:left;
+}
+
+td.topcent{
+  vertical-align:top;
+  text-align:center;
+}
+
+td.top{
+  vertical-align:top;
+}
+
+td.cent33{
+  text-align:center;
+  width:33%;
+  white-space:nowrap;
+}
+
+td.cent34{
+  text-align:center;
+  width:34%;
+  white-space:nowrap;
+}
+
+label.link {
+  color: #8cffff;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+}
+
+a.mylink:link{
+  color: #8cffff;
+}
+
+a.mylink:visited{
+  color: #8cffff;
+}
+
+a.mylink:hover{
+  color: #8cffff;
+}
+
+a.mylink:active{
+  color: #8cffff;
+}
+
+a.menu:link{
+  color: #8cffff;
+}
+
+a.menu:visited{
+  color: #8cffff;
+}
+
+a.menu:hover{
+  color: #8cffff;
+}
+
+a.menu:active{
+  color: #8cffff;
+}
+
+a.menu2:link{
+  color: #ffffff;
+}
+
+a.menu2:visited{
+  color: #ffffff;
+}
+
+a.menu2:hover{
+  color: #ffffff;
+}
+
+a.menu2:active{
+  color: #ffffff;
+}
